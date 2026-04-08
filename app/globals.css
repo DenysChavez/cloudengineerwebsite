@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Cloud Engineer Color Palette */
+  --primary: #1e3a8a; /* Deep Cloud Blue */
+  --primary-hover: #1e40af; /* Slightly lighter for hover states */
+  --secondary: #3b82f6; /* Sky Blue */
+  --accent: #14b8a6; /* Teal */
+  --background: #f8fafc; /* Light Gray */
+  --surface: #ffffff; /* White for cards/sections */
+  --text-primary: #0f172a; /* Dark Slate */
+  --text-secondary: #475569; /* Medium gray for secondary text */
+  --border: #e2e8f0; /* Soft Gray */
+  --border-hover: #cbd5e1; /* Lighter border for hover */
 }
 
 @theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark mode adjustments for professional look */
+    --primary: #3b82f6; /* Lighter blue for dark mode */
+    --primary-hover: #60a5fa; /* Even lighter for hover */
+    --secondary: #60a5fa; /* Sky Blue stays similar */
+    --accent: #2dd4bf; /* Brighter teal for dark mode */
+    --background: #0f172a; /* Dark slate background */
+    --surface: #1e293b; /* Dark surface for cards */
+    --text-primary: #f8fafc; /* Light text */
+    --text-secondary: #cbd5e1; /* Light gray for secondary text */
+    --border: #334155; /* Dark border */
+    --border-hover: #475569; /* Lighter border for hover */
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
