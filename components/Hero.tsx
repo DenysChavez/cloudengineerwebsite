@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex flex-col-reverse items-center gap-10 md:flex-row md:items-center md:gap-16">
           <div className="w-56 h-56 flex-shrink-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10 bg-slate-950">
             <Image
-              src="/profile.svg"
+              src="/profile.jpg"
               alt="Professional profile picture"
               width={224}
               height={224}
