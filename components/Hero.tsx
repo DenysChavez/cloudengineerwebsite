@@ -7,17 +7,18 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/10"
+      className="min-h-screen flex items-center justify-center bg-linear-to-br from-background to-secondary/10"
     >
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col-reverse items-center gap-10 md:flex-row md:items-center md:gap-16">
-          <div className="w-56 h-56 flex-shrink-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10 bg-slate-950">
+          <div className="w-56 h-56 shrink-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10 bg-slate-950">
             <Image
               src="/profile.jpg"
               alt="Professional profile picture"
               width={224}
               height={224}
               className="object-cover w-full h-full"
+              loading="eager"
             />
           </div>
 
@@ -36,7 +37,7 @@ const Hero = () => {
               transition={{duration: 0.5, delay: 0.2}}
               className="text-xl md:text-2xl text-secondary mb-6"
             >
-              Aspiring Cloud Engineer
+              Cloud Engineer
             </motion.h2>
             <motion.p
               initial={{opacity: 0, y: 20}}

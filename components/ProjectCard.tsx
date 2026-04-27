@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {motion} from "framer-motion"
 import {ExternalLink, Code} from "lucide-react"
 
@@ -8,6 +9,7 @@ interface ProjectCardProps {
   githubLink: string
   demoLink: string
   image?: string
+  detailsLink?: string
 }
 
 const ProjectCard = ({
@@ -17,6 +19,7 @@ const ProjectCard = ({
   githubLink,
   demoLink,
   image,
+  detailsLink,
 }: ProjectCardProps) => {
   return (
     <motion.div
@@ -45,19 +48,29 @@ const ProjectCard = ({
           ))}
         </div>
       </div>
-      <div className="flex gap-4">
-        <a
-          href={githubLink}
-          className="flex items-center gap-1 text-primary hover:text-primary-hover transition-colors"
-        >
-          <Code size={16} /> GitHub
-        </a>
-        <a
-          href={demoLink}
-          className="flex items-center gap-1 text-primary hover:text-primary-hover transition-colors"
-        >
-          <ExternalLink size={16} /> Live Demo
-        </a>
+      <div className="flex flex-col gap-3">
+        {detailsLink && (
+          <Link
+            href={detailsLink}
+            className="inline-flex items-center justify-center rounded-lg border border-primary px-4 py-3 text-center text-primary hover:bg-primary/10 transition-colors font-medium"
+          >
+            View Details
+          </Link>
+        )}
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={githubLink}
+            className="flex items-center gap-1 text-primary hover:text-primary-hover transition-colors"
+          >
+            <Code size={16} /> GitHub
+          </a>
+          <a
+            href={demoLink}
+            className="flex items-center gap-1 text-primary hover:text-primary-hover transition-colors"
+          >
+            <ExternalLink size={16} /> Live Demo
+          </a>
+        </div>
       </div>
     </motion.div>
   )
