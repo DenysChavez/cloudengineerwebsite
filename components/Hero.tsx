@@ -45,10 +45,12 @@ const Hero = () => {
               transition={{duration: 0.5, delay: 0.4}}
               className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto md:mx-0"
             >
-              As a Cloud Computing student, I am committed to learning and
-              staying current with new technologies. I invest time in studying,
-              reading, and practicing technical skills to prepare myself to
-              contribute effectively in a professional IT or cloud environment.
+              Results-driven Cloud Engineering candidate with hands-on
+              experience across AWS and Microsoft Azure. I design secure cloud
+              networking, implement least-privilege IAM/RBAC, and automate
+              deployments with Python and Azure CLI. Open to entry-level Cloud
+              Engineer roles focused on infrastructure, hybrid environments, and
+              scalable application architecture.
             </motion.p>
             <motion.div
               initial={{opacity: 0, y: 20}}
@@ -63,7 +65,7 @@ const Hero = () => {
                 View Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="/Denys_Chavez-Fuentes_Cloud_Engineer_Resume.pdf"
                 download
                 className="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors font-medium"
               >

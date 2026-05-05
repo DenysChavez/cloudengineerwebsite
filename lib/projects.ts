@@ -11,42 +11,58 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Cloud Resume Website",
-    slug: "cloud-resume-website",
+    title: "AWS Static Website Hosting & Security",
+    slug: "aws-static-website-hosting-security",
     description:
-      "A static website hosted on AWS with a CI/CD pipeline for automated deployments.",
+      "Deployed a production-style static website on Amazon S3 with secure bucket policy controls and hardened access settings.",
     details:
-      "Built a portfolio resume website deployed on AWS using S3, CloudFront, and Route 53. The project includes an automated GitHub Actions pipeline for continuous deployment and HTTPS support.",
+      "Designed and deployed an AWS S3 static website with public access controls, IAM-based least-privilege permissions, S3 versioning, and server-side encryption to improve data integrity and security posture.",
     technologies: [
       "AWS S3",
-      "CloudFront",
-      "Route 53",
-      "HTTPS",
-      "GitHub Actions",
+      "IAM",
+      "Bucket Policies",
+      "S3 Versioning",
+      "Server-Side Encryption",
     ],
-    githubLink: "https://github.com/yourusername/cloud-resume",
-    demoLink: "https://your-resume-domain.com",
+    githubLink: "https://github.com/denyschavez",
+    demoLink: "https://denyschavez.github.io",
   },
   {
-    title: "Serverless Contact Form API",
-    slug: "serverless-contact-form-api",
+    title: "AWS VPC Network Architecture & Security",
+    slug: "aws-vpc-network-architecture-security",
     description:
-      "A serverless API built with AWS Lambda for handling contact form submissions.",
+      "Built a multi-tier VPC architecture with segmented subnets, controlled routing, and private service access for secure cloud networking.",
     details:
-      "Designed and deployed a serverless contact form API using AWS Lambda, API Gateway, and DynamoDB. The API validates submissions, stores message data, and can be extended to send email notifications.",
-    technologies: ["AWS Lambda", "API Gateway", "DynamoDB"],
-    githubLink: "https://github.com/yourusername/serverless-contact-api",
-    demoLink: "https://api-gateway-url.com/contact",
+      "Designed a secure multi-AZ AWS VPC with public/private subnet segmentation, Internet and NAT Gateways, VPC Peering, VPC Endpoints for private S3 access, and CloudWatch-integrated Flow Logs for monitoring and audit readiness.",
+    technologies: [
+      "AWS VPC",
+      "Subnets",
+      "Route Tables",
+      "Internet Gateway",
+      "NAT Gateway",
+      "VPC Peering",
+      "VPC Flow Logs",
+      "CloudWatch",
+      "VPC Endpoints",
+    ],
+    githubLink: "https://github.com/denyschavez",
+    demoLink: "https://denyschavez.github.io",
   },
   {
-    title: "Infrastructure as Code Deployment",
-    slug: "infrastructure-as-code-deployment",
+    title: "Spotify Clone (AI-Assisted Full-Stack)",
+    slug: "spotify-clone-ai-assisted-full-stack",
     description:
-      "Automated infrastructure provisioning using Terraform for cloud resources.",
+      "Created a full-stack music streaming app using AI-assisted development workflows and modular React architecture.",
     details:
-      "Implemented reusable Terraform modules to provision AWS infrastructure and streamline environment deployment. The project demonstrates IaC best practices for managing cloud resources and automation.",
-    technologies: ["Terraform", "AWS", "Automation"],
-    githubLink: "https://github.com/yourusername/iac-deployment",
-    demoLink: "https://github.com/yourusername/iac-deployment",
+      "Built a full-stack music app with queue management, playback sequencing, and state-driven UI behavior. Used Cursor-assisted code exploration workflows and secure project configuration practices including .cursorignore optimization.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Full-Stack Architecture",
+      "State Management",
+      "Cursor AI",
+    ],
+    githubLink: "https://github.com/denyschavez",
+    demoLink: "https://denyschavez.github.io",
   },
 ]

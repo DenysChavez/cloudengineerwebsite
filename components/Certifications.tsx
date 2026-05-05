@@ -15,18 +15,34 @@ const Certifications = () => {
         >
           Certifications
         </motion.h2>
-        <motion.div
-          initial={{opacity: 0, y: 20}}
-          whileInView={{opacity: 1, y: 0}}
-          transition={{duration: 0.5, delay: 0.2}}
-          className="bg-surface rounded-lg shadow-md p-6 text-center border border-border"
-        >
-          <Award className="mx-auto mb-4 text-accent" size={48} />
-          <h3 className="text-xl font-semibold mb-2 text-text-primary">
-            AWS Certified Cloud Practitioner
-          </h3>
-          <p className="text-text-secondary">In Progress</p>
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <motion.div
+            initial={{opacity: 0, y: 20}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.5, delay: 0.2}}
+            className="bg-surface rounded-lg shadow-md p-6 text-center border border-border"
+          >
+            <Award className="mx-auto mb-4 text-accent" size={48} />
+            <h3 className="text-xl font-semibold mb-2 text-text-primary">
+              AWS Certified Cloud Practitioner
+            </h3>
+            <p className="text-text-secondary">In Progress</p>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 20}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.5, delay: 0.3}}
+            className="bg-surface rounded-lg shadow-md p-6 text-center border border-border"
+          >
+            <Award className="mx-auto mb-4 text-accent" size={48} />
+            <h3 className="text-xl font-semibold mb-2 text-text-primary">
+              Cloud Computing Certification Program (CCCP)
+            </h3>
+            <p className="text-text-secondary">
+              Delaware County Community College
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

@@ -41,57 +41,33 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-[1fr_1fr]">
-            <div className="space-y-4">
-              <div>
-                <h2 className="text-xl font-semibold text-text-primary mb-2">
-                  Summary
-                </h2>
-                <p className="text-text-secondary">{project.description}</p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-text-primary mb-2">
-                  Technologies
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+          <div className="space-y-4">
+            <div>
+              <h2 className="text-xl font-semibold text-text-primary mb-2">
+                Summary
+              </h2>
+              <p className="text-text-secondary">{project.description}</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-semibold text-text-primary mb-2">
+                Technologies
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
-
-            <div className="space-y-4">
-              <div className="rounded-2xl border border-border p-6 bg-background/80">
-                <h3 className="text-lg font-semibold text-text-primary mb-4">
-                  Links
-                </h3>
-                <div className="flex flex-col gap-3">
-                  <Link
-                    href={project.githubLink}
-                    className="block rounded-xl border border-primary px-4 py-3 text-center font-medium text-primary hover:bg-primary/10 transition-colors"
-                  >
-                    View GitHub Repository
-                  </Link>
-                  <Link
-                    href={project.demoLink}
-                    className="block rounded-xl border border-primary px-4 py-3 text-center font-medium text-primary hover:bg-primary/10 transition-colors"
-                  >
-                    View Live Demo
-                  </Link>
-                </div>
-              </div>
-              <div className="rounded-2xl border border-border p-6 bg-background/80">
-                <h3 className="text-lg font-semibold text-text-primary mb-2">
-                  Project Slug
-                </h3>
-                <p className="text-text-secondary">{project.slug}</p>
-              </div>
+            <div className="rounded-2xl border border-border p-6 bg-background/80">
+              <h3 className="text-lg font-semibold text-text-primary mb-2">
+                Project Slug
+              </h3>
+              <p className="text-text-secondary">{project.slug}</p>
             </div>
           </div>
         </div>

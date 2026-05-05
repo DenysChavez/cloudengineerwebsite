@@ -11,7 +11,10 @@ const Footer = () => {
         transition={{duration: 0.5}}
         className="max-w-7xl mx-auto px-4 text-center"
       >
-        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Denys V. Chavez Fuentes. All rights
+          reserved.
+        </p>
       </motion.div>
     </footer>
   )
