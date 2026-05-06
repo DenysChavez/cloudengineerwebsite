@@ -21,7 +21,7 @@ const Resume = () => {
           transition={{duration: 0.5, delay: 0.2}}
         >
           <a
-            href="/Denys_Chavez-Fuentes_Cloud_Engineer_Resume.pdf"
+            href="Denys_Chavez-Fuentes_Cloud_Engineer_Resume.pdf"
             download
             className="inline-flex items-center gap-2 bg-primary text-surface px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors mb-8 font-medium"
           >
